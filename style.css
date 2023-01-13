@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: Kumbh Sans, sans-serif;
+    font-size: 112.5%;
+
+    --fw-medium: 400;
+    --fw-heavy: 700;
+
+    --c-Dark-cyan: hsl(185, 75%, 39%);
+    --c-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --c-Dark-grayish-blue: hsl(227, 10%, 46%);
+    --c-Dark-gray: hsl(0, 0%, 59%);
+    --c-white: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--c-Dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 50vh, left 45vw top 50vh;
+}
+.card{
+    max-width: 19rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+.card-top img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+.card-mid{
+    background-color: var(--c-white);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+#name{
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: var(--fw-heavy);
+    color:var(--c-Very-dark-desaturated-blue);
+}
+#name #age{
+    margin-left: 0.7rem;
+    color: var(--c-Dark-grayish-blue);
+    font-weight: var(--fw-medium);
+}
+#location{
+    color: var(--c-Dark-grayish-blue);
+    font-size: 0.8rem;
+}
+#profile-pic{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto auto;
+    border: 0.3rem solid white;
+    border-radius: 50%;
+    width: 6rem;
+}
+.card-bottom{
+    background-color: var(--c-white);
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    border-top: 1px solid hsl(0, 0%, 90%);;
+}
+.stats{
+    text-align: center;
+}
+.stats li{
+    display: inline-block;
+    max-width: 4rem;
+    width: 4rem;
+    margin: 1.3rem 0.6rem;
+    font-weight: var(--fw-heavy);
+}
+li span{
+    display: block;
+    margin-top: 0.3rem;
+    font-weight: var(--fw-medium);
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    color: var(--c-Dark-grayish-blue);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+
+
+
+
+
+
+
